@@ -4,10 +4,10 @@
 ## always square
 
 ## makeCacheMatrix takes a matrix as input and stores it in the cache
-## as a list, it consists of four nested functions set(), get(),
-## setsolve() and getsolve()
+## as a list, it consists of four nested functions set() & get()(to get the matrix)
+## and setsolve() & getsolve()(to get the inverse of the matrix)
 makeCacheMatrix <- function(x = matrix()) {
-  s <- NULL                     ## initializing object s and m
+  s <- NULL                     ## initializing objects s and x
   set <- function(y){
     x <<- y                     ## assigns the value of y to the x object in the parent environment
     s <<- NULL                  ## assigns the value of NULL to the s object in the parent environment
